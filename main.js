@@ -20,7 +20,6 @@ const incOrReset = Rx.Observable.merge(
 );
 
 function getTimeObject(miliseconds) {
-  //1000
   return {
     minutes: Math.floor(miliseconds / 6000),
     seconds: Math.floor((miliseconds / 100) % 60),
